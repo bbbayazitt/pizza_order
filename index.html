@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Kopernik Pizza</h1>
+    <img src="pizza1.jpeg" alt="pizzapic"> <!-- put some pizza image and style it in css--->
+    <img src="pizza2.jpeg" alt="pizzapic">
+    <img src="pizza3.jpeg" alt="pizzapic">
+
+
+    <h3>Let's start prepare your order</h3>
+    <form action="order.html" method="POST"> <!--create a form and after submit redirect it to order.html page with post method-->
+    <fieldset>
+        <legend>Pizza Informations</legend> <!-- create section for each step--->
+        <label for="number_pizza"> Number of Pizza</label>
+        <input type="number" name="number_pizza" min="1" max="4" autofocus><br><br>
+        <label for="size"> Size of pizza:</label>
+        <input type="radio" id="small" name="pizza_size" value="small">
+        <label for="small">Small</label>
+        <input type="radio" id="medium" name="pizza_size" value="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="large" name="pizza_size" value="large">
+        <label for="large">Large</label><br><br>
+        <label for="shape"> Shape of pizza:</label>
+        <input type="radio" id="square" name="pizza_shape" value="square>
+        <label for="square">Square</label>
+        <input type="radio" id="round" name="pizza_shape" value="round">
+        <label for="square">Round</label><br><br>
+        
+            <legend>Toppings</legend>
+        <label>Choose your toppings down below :</label><br><br>
+        <label for="tomato">Tomato</label>
+        <input type="radio" name="toppings" id="tomato" value="tomato">
+        <label for="pepper">Pepper</label>
+        <input type="radio" name="toppings" id="pepper" value="pepper">
+        <label for="onion">Onion</label>
+        <input type="radio" name="toppings" id="onion" value="onion">
+        <label for="olive">Olives</label>
+        <input type="radio" name="toppings" id="olive" value="olive"><br><br>
+        <label>Choose your cheese :</label><br><br>
+        <label for="Mozarella">Mozarella</label>
+        <input type="radio" name="cheese" id="mozarella" value="mozarella">
+        <label for="Cheddar">Cheddar</label>
+        <input type="radio" name="cheese" id="Cheddar" value="Cheddar"><br><br>
+        <label>Choose your Crust Type :</label><br><br>
+        <label for="deepdish">Deep dish</label>
+        <input type="radio" name="crust" id="deepdish" value="deepdish">
+        <label for="thin">Thin</label>
+        <input type="radio" name="crust" id="thin" value="thin"><br><br>
+        <label for="delivery">Delivery type :</label><br><br>
+        <label for="takeout">Take out</label>
+        <input type="radio" name="delivery" id="takeout" value="takeout">
+        <label for="eatin">Eat in</label>
+        <input type="radio" name="delivery" id="eatin" value="eatin"> <br><br>
+        <label>Schedule te order : </label> <br><br>
+        <input type="date" name="date"> <br><br>
+        <fieldset>
+            <legend>Notes</legend>
+            <label for="notes"> </label> <br>
+            <textarea id="notes" cols="30" rows="10" placeholder="please notify if you have any allergy"></textarea> <br><br>
+            <label for="phone_num">Enter your phone number and get %20 discount!</label> <br><br>
+            <input type="tel" id="phone_num" name="phone_num" pattern="[0-9]{3}-[0-9]{3}-[0-9{4}]"> <br><br> <!-- with pattern first 3 digit numbers between 0-9 and other 3 digit 0-9 and other 4 digit numbers between 0-9-->
+            <label form>Enter your e-mail and get %20 discount! </label><br><br>
+            <input type="email" placeholder="someone@gmail.com"><br><br>
+        </fieldset>
+        <input type="submit" value="Submit"> <!--create submit button,after the submit directly goes order.html page-->
+
+
+    </form>
+</body>
+</html>
